@@ -1,9 +1,13 @@
 package main
 
 import (
-	"eino-learn/compose/stage07"
+	"context"
+	"eino-learn/orchestrate/stage02"
 	"log"
 
+	ccb "github.com/cloudwego/eino-ext/callbacks/cozeloop"
+	"github.com/cloudwego/eino/callbacks"
+	"github.com/coze-dev/cozeloop-go"
 	"github.com/joho/godotenv"
 )
 
@@ -13,6 +17,15 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
+	ctx := context.Background()
+	client, err := cozeloop.NewClient()
+	if err != nil {
+		panic(err)
+	}
+	defer client.Close(ctx)
+	// 在服务 init 时 once 调用
+	handler := ccb.NewLoopHandler(client)
+	callbacks.AppendGlobalHandlers(handler)
 	// stage01.ChatGenerate()
 	// stage01.ChatStream()
 	// stage02.TemplateChat()
@@ -51,5 +64,12 @@ func main() {
 	// 	println(fmt.Sprintf("Search result %v", *doc))
 	// }
 	// stage06.TransDoc()
-	stage07.ToolExample()
+	// stage07.ToolExample()
+	// stage01.OrcChain()
+	// stage01.SimpleAgent()
+	// stage02.OrcGraph()
+	// stage02.OrcGraphWithModel()
+	// stage02.OrcGraphWithState()
+	// stage02.OrcGraphWithCallback()
+	stage02.OutSideOrcGraph()
 }

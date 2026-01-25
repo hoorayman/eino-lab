@@ -28,7 +28,7 @@ func GetGame(_ context.Context, params *InputParams) (string, error) {
 			return game.Url, nil
 		}
 	}
-	return "", nil
+	return "Unknown game", nil
 }
 
 func CreateTool() tool.InvokableTool {
