@@ -9,12 +9,14 @@ require (
 	github.com/cloudwego/eino-ext/components/embedding/ark v0.1.1
 	github.com/cloudwego/eino-ext/components/indexer/milvus v0.0.0-20260122064704-d8be5ee82c09
 	github.com/cloudwego/eino-ext/components/model/ark v0.1.63
+	github.com/cloudwego/eino-ext/components/model/openai v0.1.8
 	github.com/cloudwego/eino-ext/components/retriever/milvus v0.0.0-20260122064704-d8be5ee82c09
 	github.com/cloudwego/eino-ext/components/tool/browseruse v0.0.0-20260122064704-d8be5ee82c09
 	github.com/coze-dev/cozeloop-go v0.1.20
 	github.com/google/uuid v1.6.0
 	github.com/joho/godotenv v1.5.1
 	github.com/milvus-io/milvus-sdk-go/v2 v2.4.2
+	github.com/volcengine/volcengine-go-sdk v1.1.49
 )
 
 require (
@@ -31,6 +33,7 @@ require (
 	github.com/chromedp/sysutil v1.1.0 // indirect
 	github.com/cloudwego/base64x v0.1.6 // indirect
 	github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2 v2.0.0-20251114071555-14756a18ad37 // indirect
+	github.com/cloudwego/eino-ext/libs/acl/openai v0.1.13 // indirect
 	github.com/cockroachdb/errors v1.9.1 // indirect
 	github.com/cockroachdb/logtags v0.0.0-20211118104740-dabe8e521a4f // indirect
 	github.com/cockroachdb/redact v1.1.3 // indirect
@@ -38,6 +41,7 @@ require (
 	github.com/coze-dev/cozeloop-go/spec v0.1.7 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/eino-contrib/jsonschema v1.0.3 // indirect
+	github.com/evanphx/json-patch v0.5.2 // indirect
 	github.com/getsentry/sentry-go v0.12.0 // indirect
 	github.com/go-json-experiment/json v0.0.0-20250223041408-d3c622f1b874 // indirect
 	github.com/gobwas/httphead v0.1.0 // indirect
@@ -54,6 +58,7 @@ require (
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mailru/easyjson v0.9.0 // indirect
+	github.com/meguminnnnnnnnn/go-openai v0.1.1 // indirect
 	github.com/milvus-io/milvus-proto/go-api/v2 v2.4.10-0.20240819025435-512e3b98866a // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
@@ -71,7 +76,6 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	github.com/volcengine/volc-sdk-golang v1.0.23 // indirect
-	github.com/volcengine/volcengine-go-sdk v1.1.49 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/yargevad/filepathx v1.0.0 // indirect
 	golang.org/x/arch v0.11.0 // indirect
