@@ -1,13 +1,12 @@
 package main
 
 import (
-	"context"
 	"eino-learn/adk/helloworld"
 	"log"
 
-	ccb "github.com/cloudwego/eino-ext/callbacks/cozeloop"
-	"github.com/cloudwego/eino/callbacks"
-	"github.com/coze-dev/cozeloop-go"
+	// ccb "github.com/cloudwego/eino-ext/callbacks/cozeloop"
+	// "github.com/cloudwego/eino/callbacks"
+	// "github.com/coze-dev/cozeloop-go"
 	"github.com/joho/godotenv"
 )
 
@@ -17,15 +16,15 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	ctx := context.Background()
-	client, err := cozeloop.NewClient()
-	if err != nil {
-		panic(err)
-	}
-	defer client.Close(ctx)
-	// 在服务 init 时 once 调用
-	handler := ccb.NewLoopHandler(client)
-	callbacks.AppendGlobalHandlers(handler)
+	// ctx := context.Background()
+	// client, err := cozeloop.NewClient()
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// defer client.Close(ctx)
+	// // 在服务 init 时 once 调用
+	// handler := ccb.NewLoopHandler(client)
+	// callbacks.AppendGlobalHandlers(handler)
 	// stage01.ChatGenerate()
 	// stage01.ChatStream()
 	// stage02.TemplateChat()
