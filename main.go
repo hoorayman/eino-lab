@@ -1,7 +1,7 @@
 package main
 
 import (
-	"eino-learn/adk/helloworld"
+	"eino-learn/adk/intro/workflow/loop"
 	"log"
 
 	// ccb "github.com/cloudwego/eino-ext/callbacks/cozeloop"
@@ -71,5 +71,6 @@ func main() {
 	// stage02.OrcGraphWithState()
 	// stage02.OrcGraphWithCallback()
 	// stage02.OutSideOrcGraph()
-	helloworld.HelloWorldAgent()
+	// helloworld.HelloWorldAgent()
+	loop.LoopAgent()
 }
